@@ -1,5 +1,7 @@
 package helloworld;
 
+import java.util.Scanner;
+
 public class HelloWorld {
 
     /*
@@ -13,5 +15,11 @@ public class HelloWorld {
         println() to metoda, która drukuje coś w konsoli, a na końcu drukuje znak nowej linii.
      */
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Podaj swoje imię.");
+        String name = sc.nextLine();
+        System.out.println("Hello " + name + "!");
+    }
 
 }
